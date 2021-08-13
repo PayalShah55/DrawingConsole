@@ -1,0 +1,1397 @@
+questions
+
+Decoding string 
+
+“3[b2[ca]]”>
+bcacabcacabcaca
+
+import java.util.Stack;
+  
+class Test
+{
+    // Returns decoded string for 'str'
+    static String decode(String str)
+    {
+        Stack<Integer> integerstack = new Stack<>();
+        Stack<Character> stringstack = new Stack<>();
+        String temp = "", result = "";
+       
+        // Traversing the string
+        for (int i = 0; i < str.length(); i++)
+        {
+            int count = 0;
+       
+            // If number, convert it into number
+            // and push it into integerstack.
+            if (Character.isDigit(str.charAt(i)))
+            {
+                while (Character.isDigit(str.charAt(i)))
+                {
+                    count = count * 10 + str.charAt(i) - '0';
+                    i++;
+                }
+       
+                i--;
+                integerstack.push(count);
+            }
+       
+            // If closing bracket ']', pop elemment until
+            // '[' opening bracket is not found in the
+            // character stack.
+            else if (str.charAt(i) == ']')
+            {
+                temp = "";
+                count = 0;
+       
+                if (!integerstack.isEmpty())
+                {
+                    count = integerstack.peek();
+                    integerstack.pop();
+                }
+       
+                while (!stringstack.isEmpty() && stringstack.peek()!='[' )
+                {
+                    temp = stringstack.peek() + temp;
+                    stringstack.pop();
+                }
+       
+                if (!stringstack.empty() && stringstack.peek() == '[')
+                    stringstack.pop();
+       
+                // Repeating the popped string 'temo' count
+                // number of times.
+                for (int j = 0; j < count; j++)
+                    result = result + temp;
+       
+                // Push it in the character stack.
+                for (int j = 0; j < result.length(); j++)
+                    stringstack.push(result.charAt(j));
+       
+                result = "";
+            }
+       
+            // If '[' opening bracket, push it into character stack.
+            else if (str.charAt(i) == '[')
+            {
+                if (Character.isDigit(str.charAt(i-1)))
+                    stringstack.push(str.charAt(i));
+       
+                else
+                {
+                    stringstack.push(str.charAt(i));
+                    integerstack.push(1);
+                }
+            }
+       
+            else
+                stringstack.push(str.charAt(i));
+        }
+       
+        // Pop all the elmenet, make a string and return.
+        while (!stringstack.isEmpty())
+        {
+            result = stringstack.peek() + result;
+            stringstack.pop();
+        }
+       
+        return result;
+    }
+  
+    // Driver method
+    public static void main(String args[])
+    {
+        String str = "3[b2[ca]]";
+        System.out.println(decode(str));
+    }
+}
+
+
+Fibonacci Series
+
+//Fibonacci Series using Recursion
+class fibonacci
+{
+    static int fib(int n)
+    {
+    if (n <= 1)
+       return n;
+    return fib(n-1) + fib(n-2);
+    }
+      
+    public static void main (String args[])
+    {
+    int n = 9;
+    System.out.println(fib(n));
+    }
+}
+
+
+
+// Fibonacci Series using Dynamic Programming
+class fibonacci
+{
+   static int fib(int n)
+    {
+    /* Declare an array to store Fibonacci numbers. */
+    int f[] = new int[n+2]; // 1 extra to handle case, n = 0
+    int i;
+      
+    /* 0th and 1st number of the series are 0 and 1*/
+    f[0] = 0;
+    f[1] = 1;
+     
+    for (i = 2; i <= n; i++)
+    {
+       /* Add the previous 2 numbers in the series
+         and store it */
+        f[i] = f[i-1] + f[i-2];
+    }
+      
+    return f[n];
+    }
+      
+    public static void main (String args[])
+    {
+        int n = 9;
+        System.out.println(fib(n));
+    }
+}
+
+
+
+class fibonacci
+{
+    static int fib(int n)
+    {
+        int a = 0, b = 1, c;
+        if (n == 0)
+            return a;
+        for (int i = 2; i <= n; i++)
+        {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        return b;
+    }
+ 
+    public static void main (String args[])
+    {
+        int n = 9;
+        System.out.println(fib(n));
+    }
+}
+
+
+decoding numbers
+
+class Solution {
+    public int numDecodings(String s) {
+        
+        if(s.charAt(0)=='0')
+            return 0;
+        
+        if(s.length()==1)
+            return 1;
+        
+        int count1=1,count2=1;
+        for(int i=1;i<s.length();i++)
+        {
+            int d=s.charAt(i)-'0';
+            int dd=(s.charAt(i-1)-'0')*10+d;
+            
+             int count=0;
+            if(d>0)
+             count+=count2;
+           
+            if(dd>=10 && dd<=26)
+                count+=count1;
+            
+            count1=count2;
+            count2=count;
+        }
+        
+        return count2;
+    }
+}
+
+Arrays.stream("capitalize my string".split(" ")).map(s -> s.substring(0,1).toUpperCase()+s.substring(1)).collect(Collectors.joining(" "));
+
+// Java program to convert first character
+// uppercase in a sentence
+class GFG {
+ 
+    static String convert(String str)
+    {
+ 
+        // Create a char array of given String
+        char ch[] = str.toCharArray();
+        for (int i = 0; i < str.length(); i++) {
+ 
+            // If first character of a word is found
+            if (i == 0 && ch[i] != ' ' ||
+                ch[i] != ' ' && ch[i - 1] == ' ') {
+ 
+                // If it is in lower-case
+                if (ch[i] >= 'a' && ch[i] <= 'z') {
+ 
+                    // Convert into Upper-case
+                    ch[i] = (char)(ch[i] - 'a' + 'A');
+                }
+            }
+ 
+            // If apart from first character
+            // Any one is in Upper-case
+            else if (ch[i] >= 'A' && ch[i] <= 'Z')
+ 
+                // Convert into Lower-Case
+                ch[i] = (char)(ch[i] + 'a' - 'A');           
+        }
+ 
+        // Convert the char array to equivalent String
+        String st = new String(ch);
+        return st;
+    }
+ 
+    public static void main(String[] args)
+    {
+        String str = "gEEks fOr GeeKs";
+        System.out.println(convert(str));
+    }
+}
+
+
+
+no of island
+
+class Solution {
+    public int numIslands(char[][] grid) {
+    
+        int row=grid.length;
+        int col=grid[0].length;
+        int count=0;
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++)
+            {
+                if(grid[i][j]=='1')
+                {
+                    System.out.println(grid[i][j]);
+                    dfs(grid,i,j);
+                    count++;
+                }
+            }
+        }
+        
+       return count;  
+    }
+    
+    
+    public void dfs(char grid[][],int i,int j)
+    {
+        int row=grid.length;
+        int col=grid[0].length;
+        
+        grid[i][j]='0';
+        
+        if(i+1<row && grid[i+1][j]=='1')
+            dfs(grid,i+1,j);
+         
+        if(i-1>=0 && grid[i-1][j]=='1')
+            dfs(grid,i-1,j);
+         
+        if(j+1<col && grid[i][j+1]=='1')
+            dfs(grid,i,j+1);
+         
+        if(j-1>=0 && grid[i][j-1]=='1')
+            dfs(grid,i,j-1);
+    }
+}
+
+merge two sorted Lists
+
+class GFG {
+  
+    static class Node {
+        int data;
+        Node next;
+    };
+  
+    // Function to create newNode in a linkedlist
+    static Node newNode(int key)
+    {
+        Node temp = new Node();
+        temp.data = key;
+        temp.next = null;
+        return temp;
+    }
+  
+    // A utility function to print linked list
+    static void printList(Node node)
+    {
+        while (node != null) {
+            System.out.printf("%d ", node.data);
+            node = node.next;
+        }
+    }
+  
+    // Merges two given lists in-place. This function
+    // mainly compares head nodes and calls mergeUtil()
+    static Node merge(Node h1, Node h2)
+    {
+        if (h1 == null)
+            return h2;
+        if (h2 == null)
+            return h1;
+  
+        // start with the linked list
+        // whose head data is the least
+        if (h1.data < h2.data) {
+            h1.next = merge(h1.next, h2);
+            return h1;
+        }
+        else {
+            h2.next = merge(h1, h2.next);
+            return h2;
+        }
+    }
+  
+    // Driver program
+    public static void main(String args[])
+    {
+        Node head1 = newNode(1);
+        head1.next = newNode(3);
+        head1.next.next = newNode(5);
+  
+        // 1.3.5 LinkedList created
+  
+        Node head2 = newNode(0);
+        head2.next = newNode(2);
+        head2.next.next = newNode(4);
+  
+        // 0.2.4 LinkedList created
+  
+        Node mergedhead = merge(head1, head2);
+  
+        printList(mergedhead);
+    }
+}
+
+ 
+ decoding ways 2 
+ 
+ public class Solution {
+    int M = 1000000007;
+    public int numDecodings(String s) {
+        long[] dp = new long[s.length() + 1];
+        dp[0] = 1;
+        dp[1] = s.charAt(0) == '*' ? 9 : s.charAt(0) == '0' ? 0 : 1;
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == '*') {
+                dp[i + 1] = 9 * dp[i];
+                if (s.charAt(i - 1) == '1')
+                    dp[i + 1] = (dp[i + 1] + 9 * dp[i - 1]) % M;
+                else if (s.charAt(i - 1) == '2')
+                    dp[i + 1] = (dp[i + 1] + 6 * dp[i - 1]) % M;
+                else if (s.charAt(i - 1) == '*')
+                    dp[i + 1] = (dp[i + 1] + 15 * dp[i - 1]) % M;
+            } else {
+                dp[i + 1] = s.charAt(i) != '0' ? dp[i] : 0;
+                if (s.charAt(i - 1) == '1')
+                    dp[i + 1] = (dp[i + 1] + dp[i - 1]) % M;
+                else if (s.charAt(i - 1) == '2' && s.charAt(i) <= '6')
+                    dp[i + 1] = (dp[i + 1] + dp[i - 1]) % M;
+                else if (s.charAt(i - 1) == '*')
+                    dp[i + 1] = (dp[i + 1] + (s.charAt(i) <= '6' ? 2 : 1) * dp[i - 1]) % M;
+            }
+        }
+        return (int) dp[s.length()];
+    }
+}
+
+
+paint fence 
+
+
+class GFG {
+ 
+    
+    static long countWays(int n, int k)
+    {
+    
+        long total = k;
+        int mod = 1000000007;
+ 
+      
+        int same = 0, diff = k;
+ 
+        for (int i = 2; i <= n; i++) {
+          
+            same = diff;
+ 
+           
+            diff = (int)total * (k - 1);
+            diff = diff % mod;
+ 
+         
+            total = (same + diff) % mod;
+        }
+        return total;
+    }
+ 
+   
+    public static void main(String[] args)
+    {
+        int n = 3, k = 2;
+        System.out.println(countWays(n, k));
+    }
+}
+
+
+
+reverseAdd
+
+
+public class ReverseAdd 
+{
+    /* Iterative function to reverse digits of num*/
+    long reversDigits(long num)
+    {
+        long rev_num = 0;
+        while (num > 0)
+        {
+            rev_num = rev_num*10 + num%10;
+            num = num/10;
+        }
+        return rev_num;
+    }
+  
+    /* Function to check whether he number is
+           palindrome or not */
+    boolean isPalindrome(long num)
+    {
+        return (reversDigits(num) == num);
+    }
+  
+    /* Reverse and Add Function */
+    void ReverseandAdd(long num)
+    {
+        long rev_num = 0;
+        while (num <= 4294967295l)
+        {
+            // Reversing the digits of the number
+            rev_num = reversDigits(num);
+  
+            // Adding the reversed number with the original
+            num = num + rev_num;
+  
+            // Checking whether the number is palindrome or not
+            if(isPalindrome(num))
+            {
+                System.out.println(num);
+                break;
+            }
+            else if (num > 4294967295l)
+            {
+                System.out.println("No palindrome exist");
+            }
+        }
+    }
+      
+    // Main method
+    public static void main(String[] args) 
+    {
+        ReverseAdd ob = new ReverseAdd();
+        ob.ReverseandAdd(195l);
+        ob.ReverseandAdd(265l);
+          
+    }
+}
+
+
+coins min value
+
+// A Dynamic Programming based Java
+// program to find minimum of coins
+// to make a given change V
+import java.io.*;
+ 
+class GFG
+{
+    // m is size of coins array
+    // (number of different coins)
+    static int minCoins(int coins[], int m, int V)
+    {
+        // table[i] will be storing
+        // the minimum number of coins
+        // required for i value. So
+        // table[V] will have result
+        int table[] = new int[V + 1];
+ 
+        // Base case (If given value V is 0)
+        table[0] = 0;
+ 
+        // Initialize all table values as Infinite
+        for (int i = 1; i <= V; i++)
+        table[i] = Integer.MAX_VALUE;
+ 
+        // Compute minimum coins required for all
+        // values from 1 to V
+        for (int i = 1; i <= V; i++)
+        {
+            // Go through all coins smaller than i
+            for (int j = 0; j < m; j++)
+            if (coins[j] <= i)
+            {
+                int sub_res = table[i - coins[j]];
+                if (sub_res != Integer.MAX_VALUE
+                       && sub_res + 1 < table[i])
+                       table[i] = sub_res + 1;
+                        
+                 
+            }
+             
+        }
+       
+          if(table[V]==Integer.MAX_VALUE)
+            return -1;
+       
+        return table[V];
+         
+    }
+ 
+    // Driver program
+    public static void main (String[] args)
+    {
+        int coins[] = {9, 6, 5, 1};
+        int m = coins.length;
+        int V = 11;
+        System.out.println ( "Minimum coins required is "
+                            + minCoins(coins, m, V));
+    }
+}
+ 
+//This Code is contributed by vt_m.
+
+coin change possible solutions
+
+public static int count( int S[], int m, int n )
+{
+    // table[i] will be storing the number of solutions for
+    // value i. We need n+1 rows as the table is constructed
+    // in bottom up manner using the base case (n = 0)
+    int table[]=new int[n+1];
+ 
+    // Base case (If given value is 0)
+    table[0] = 1;
+ 
+    // Pick all coins one by one and update the table[] values
+    // after the index greater than or equal to the value of the
+    // picked coin
+    for(int i=0; i<m; i++)
+        for(int j=S[i]; j<=n; j++)
+            table[j] += table[j-S[i]];
+ 
+    return table[n];
+}
+
+
+to find height of the tree
+
+// Java program to find height of tree
+  
+// A binary tree node
+class Node
+{
+    int data;
+    Node left, right;
+  
+    Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+  
+class BinaryTree
+{
+     Node root;
+  
+    /* Compute the "maxDepth" of a tree -- the number of
+       nodes along the longest path from the root node
+       down to the farthest leaf node.*/
+    int maxDepth(Node node)
+    {
+        if (node == null)
+            return 0;
+        else
+        {
+            /* compute the depth of each subtree */
+            int lDepth = maxDepth(node.left);
+            int rDepth = maxDepth(node.right);
+  
+            /* use the larger one */
+            if (lDepth > rDepth)
+                return (lDepth + 1);
+             else
+                return (rDepth + 1);
+        }
+    }
+      
+    /* Driver program to test above functions */
+    public static void main(String[] args)
+    {
+        BinaryTree tree = new BinaryTree();
+  
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+  
+        System.out.println("Height of tree is : " +
+                                      tree.maxDepth(tree.root));
+    }
+}
+ 
+ 
+ 
+ balanced paranthesis
+ 
+ // Java program for checking
+// balanced brackets
+import java.util.*;
+ 
+public class BalancedBrackets {
+ 
+    // function to check if brackets are balanced
+    static boolean areBracketsBalanced(String expr)
+    {
+        // Using ArrayDeque is faster than using Stack class
+        Deque<Character> stack
+            = new ArrayDeque<Character>();
+ 
+        // Traversing the Expression
+        for (int i = 0; i < expr.length(); i++)
+        {
+            char x = expr.charAt(i);
+ 
+            if (x == '(' || x == '[' || x == '{')
+            {
+                // Push the element in the stack
+                stack.push(x);
+                continue;
+            }
+ 
+            // If current character is not opening
+            // bracket, then it must be closing. So stack
+            // cannot be empty at this point.
+            if (stack.isEmpty())
+                return false;
+            char check;
+            switch (x) {
+            case ')':
+                check = stack.pop();
+                if (check == '{' || check == '[')
+                    return false;
+                break;
+ 
+            case '}':
+                check = stack.pop();
+                if (check == '(' || check == '[')
+                    return false;
+                break;
+ 
+            case ']':
+                check = stack.pop();
+                if (check == '(' || check == '{')
+                    return false;
+                break;
+            }
+        }
+ 
+        // Check Empty Stack
+        return (stack.isEmpty());
+    }
+ 
+    // Driver code
+    public static void main(String[] args)
+    {
+        String expr = "([{}])";
+ 
+        // Function call
+        if (areBracketsBalanced(expr))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
+    }
+}
+
+
+Letter Combination 
+
+// Java implementation of the approach
+import java.io.*;
+import java.util.*;
+ 
+class GFG {
+    // Function to return a vector that contains
+    // all the generated letter combinations
+    static ArrayList<String>
+    letterCombinationsUtil(int[] number, int n,
+                           String[] table)
+    {
+        // To store the generated letter combinations
+        ArrayList<String> list = new ArrayList<>();
+ 
+        Queue<String> q = new LinkedList<>();
+        q.add("");
+ 
+        while (!q.isEmpty()) {
+            String s = q.remove();
+ 
+            // If complete word is generated
+            // push it in the list
+            if (s.length() == n)
+                list.add(s);
+            else {
+                String val = table[number[s.length()]];
+                for (int i = 0; i < val.length(); i++)
+                {
+                    q.add(s + val.charAt(i));
+                }
+            }
+        }
+        return list;
+    }
+ 
+    // Function that creates the mapping and
+    // calls letterCombinationsUtil
+    static void letterCombinations(int[] number, int n)
+    {
+        // table[i] stores all characters that
+        // corresponds to ith digit in phone
+        String[] table
+            = { "0",   "1",   "abc",  "def", "ghi",
+                "jkl", "mno", "pqrs", "tuv", "wxyz" };
+ 
+        ArrayList<String> list
+            = letterCombinationsUtil(number, n, table);
+ 
+        // Print the contents of the list
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + " ");
+        }
+    }
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        int[] number = { 2, 3 };
+        int n = number.length;
+       
+        // Funciton call
+        letterCombinations(number, n);
+    }
+}
+ 
+// This code is contributed by rachana soma
+
+
+
+Longest commom subString
+
+class Main
+{
+    // Function to find the longest common substring of sequences
+    // `X[0…m-1]` and `Y[0…n-1]`
+    public static String LCS(String X, String Y, int m, int n)
+    {
+        int maxlen = 0;         // stores the max length of LCS
+        int endingIndex = m;    // stores the ending index of LCS in `X`
+ 
+        // `lookup[i][j]` stores the length of LCS of substring
+        // `X[0…i-1]`, `Y[0…j-1]`
+        int[][] lookup = new int[m + 1][n + 1];
+ 
+        // fill the lookup table in a bottom-up manner
+        for (int i = 1; i <= m; i++)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                // if the current character of `X` and `Y` matches
+                if (X.charAt(i - 1) == Y.charAt(j - 1))
+                {
+                    lookup[i][j] = lookup[i - 1][j - 1] + 1;
+ 
+                    // update the maximum length and ending index
+                    if (lookup[i][j] > maxlen)
+                    {
+                        maxlen = lookup[i][j];
+                        endingIndex = i;
+                    }
+                }
+            }
+        }
+ 
+        // return longest common substring having length `maxlen`
+        return X.substring(endingIndex - maxlen, endingIndex);
+    }
+ 
+    public static void main(String[] args)
+    {
+        String X = "ABC", Y = "BABA";
+        int m = X.length(), n = Y.length();
+ 
+        // Find longest common substring
+        System.out.print("The longest common substring is "
+                        + LCS(X, Y, m, n));
+    }
+}
+
+Java code 
+
+Java Code:
+package com.bhimubgm.example;
+
+
+public class InserStartAndHyphen {
+
+  
+
+  public static void main(String[] args) {
+
+    System.out.println(inserStartAndHyphen("2397492834092"));
+
+  }
+
+
+  public static String inserStartAndHyphen(String s){
+
+
+    // Stores resulting string.
+
+    StringBuilder sb = new StringBuilder();
+
+    
+
+    // Start with the first character
+
+    sb.append(s.charAt(0));
+
+    for(int i = 0; i < s.length() - 1; i++){
+
+      int v1 = Integer.parseInt("" + s.charAt(i));
+
+      int v2 = Integer.parseInt("" + s.charAt(i + 1));
+
+
+      // Check if both or even numbers then appen '*'
+
+      if(v1 != 0 && v2 != 0 && v1 % 2 == 0 && v2 % 2 == 0) {
+
+        sb.append('*');
+
+      } 
+
+      // Check if both are odd numbers then append '-'
+
+      else if(v1 % 2 != 0 && v2 % 2 != 0){
+
+        sb.append('-');
+
+      }
+
+      //put next character in result.
+
+      sb.append(s.charAt(i + 1));
+
+    }
+
+    return sb.toString();
+
+  }
+
+}
+
+Longest subarray equal to K
+
+// Java implementation to find the length
+// of longest subarray having sum k
+import java.io.*;
+import java.util.*;
+  
+class GFG {
+  
+      // function to find the length of longest
+      // subarray having sum k
+      static int lenOfLongSubarr(int[] arr, int n, int k)
+      {
+             // HashMap to store (sum, index) tuples
+             HashMap<Integer, Integer> map = new HashMap<>();
+             int sum = 0, maxLen = 0;
+  
+             // traverse the given array
+             for (int i = 0; i < n; i++) {
+                  
+                  // accumulate sum
+                  sum += arr[i];
+                  
+                  // when subarray starts from index '0'
+                  if (sum == k)
+                      maxLen = i + 1;
+  
+                  // make an entry for 'sum' if it is
+                  // not present in 'map'
+                  if (!map.containsKey(sum)) {
+                      map.put(sum, i);
+                  }
+  
+                  // check if 'sum-k' is present in 'map'
+                  // or not
+                  if (map.containsKey(sum - k)) {
+                        
+                      // update maxLength
+                      if (maxLen < (i - map.get(sum - k)))
+                          maxLen = i - map.get(sum - k);
+                  }
+             }
+               
+             return maxLen;             
+      }
+  
+      // Driver code
+      public static void main(String args[])
+      {
+             int[] arr = {10, 5, 2, 7, 1, 9};
+             int n = arr.length;
+             int k = 15;
+             System.out.println("Length = " + 
+                                lenOfLongSubarr(arr, n, k));
+      }
+}
+
+
+find possible way
+
+
+import java.io.*;
+import java.util.*;
+ 
+class BFSElement
+{
+    int i, j;
+    BFSElement(int i, int j)
+    {
+        this.i = i;
+        this.j = j;
+    }
+}
+ 
+class GFG {
+    static int R = 4, C = 4;
+    BFSElement b;
+     
+    static boolean findPath(int M[][])
+    {
+       
+        // 1) Create BFS queue q
+        Queue<BFSElement> q = new LinkedList<>();
+       
+        // 2)scan the matrix
+        for (int i = 0; i < R; ++i)
+        {
+            for (int j = 0; j < C; ++j)
+            {
+                
+                // if there exists a cell in the matrix such
+                // that its value is 1 then push it to q
+                if (M[i][j] == 1) {
+                    q.add(new BFSElement(i, j));
+                    break;
+                }
+            }
+         
+        }
+     
+        // 3) run BFS algorithm with q.
+        while (q.size() != 0)
+        {
+            BFSElement x = q.peek();
+            q.remove();
+            int i = x.i;
+            int j = x.j;
+           
+            // skipping cells which are not valid.
+            // if outside the matrix bounds
+            if (i < 0 || i >= R || j < 0 || j >= C)
+                continue;
+            
+            // if they are walls (value is 0).
+            if (M[i][j] == 0)
+                continue;
+      
+            // 3.1) if in the BFS algorithm process there was a
+            // vertex x=(i,j) such that M[i][j] is 2 stop and
+            // return true
+            if (M[i][j] == 2)
+                return true;
+            
+            // marking as wall upon successful visitation
+            M[i][j] = 0;
+      
+            // pushing to queue u=(i,j+1),u=(i,j-1)
+            // u=(i+1,j),u=(i-1,j)
+            for (int k = -1; k <= 1; k += 2)
+            {
+                q.add(new BFSElement(i + k, j));
+                q.add(new BFSElement(i, j + k));
+            }
+        }
+             
+        // BFS algorithm terminated without returning true
+        // then there was no element M[i][j] which is 2, then
+        // return false
+        return false;
+     
+    }
+   
+    // Main Driver code
+    public static void main (String[] args)
+    {
+        int M[][] = { { 0, 3, 0, 1 },
+                    { 3, 0, 3, 3 },
+                    { 2, 3, 3, 3 },
+                    { 0, 3, 3, 3 } };
+         
+        if(findPath(M) == true)
+            System.out.println("Yes");
+        else
+            System.out.println("No");     
+    }
+}
+
+
+Suduko solver
+
+// Java program for above approach
+public class Suduko {
+ 
+    // N is the size of the 2D matrix   N*N
+    static int N = 9;
+ 
+    /* Takes a partially filled-in grid and attempts
+    to assign values to all unassigned locations in
+    such a way to meet the requirements for
+    Sudoku solution (non-duplication across rows,
+    columns, and boxes) */
+    static boolean solveSuduko(int grid[][], int row,
+                               int col)
+    {
+ 
+        /*if we have reached the 8th
+           row and 9th column (0
+           indexed matrix) ,
+           we are returning true to avoid further
+           backtracking       */
+        if (row == N - 1 && col == N)
+            return true;
+ 
+        // Check if column value  becomes 9 ,
+        // we move to next row
+        // and column start from 0
+        if (col == N) {
+            row++;
+            col = 0;
+        }
+ 
+        // Check if the current position
+        // of the grid already
+        // contains value >0, we iterate
+        // for next column
+        if (grid[row][col] != 0)
+            return solveSuduko(grid, row, col + 1);
+ 
+        for (int num = 1; num < 10; num++) {
+ 
+            // Check if it is safe to place
+            // the num (1-9)  in the
+            // given row ,col ->we move to next column
+            if (isSafe(grid, row, col, num)) {
+ 
+                /*  assigning the num in the current
+                (row,col)  position of the grid and
+                assuming our assined num in the position
+                is correct */
+                grid[row][col] = num;
+ 
+                // Checking for next
+                // possibility with next column
+                if (solveSuduko(grid, row, col + 1))
+                    return true;
+            }
+            /* removing the assigned num , since our
+               assumption was wrong , and we go for next
+               assumption with diff num value   */
+            grid[row][col] = 0;
+        }
+        return false;
+    }
+ 
+    /* A utility function to print grid */
+    static void print(int[][] grid)
+    {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++)
+                System.out.print(grid[i][j] + " ");
+            System.out.println();
+        }
+    }
+ 
+    // Check whether it will be legal
+    // to assign num to the
+    // given row, col
+    static boolean isSafe(int[][] grid, int row, int col,
+                          int num)
+    {
+ 
+        // Check if we find the same num
+        // in the similar row , we
+        // return false
+        for (int x = 0; x <= 8; x++)
+            if (grid[row][x] == num)
+                return false;
+ 
+        // Check if we find the same num
+        // in the similar column ,
+        // we return false
+        for (int x = 0; x <= 8; x++)
+            if (grid[x][col] == num)
+                return false;
+ 
+        // Check if we find the same num
+        // in the particular 3*3
+        // matrix, we return false
+        int startRow = row - row % 3, startCol
+                                      = col - col % 3;
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                if (grid[i + startRow][j + startCol] == num)
+                    return false;
+ 
+        return true;
+    }
+  
+    // Driver Code
+    public static void main(String[] args)
+    {
+        int grid[][] = { { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
+                         { 5, 2, 0, 0, 0, 0, 0, 0, 0 },
+                         { 0, 8, 7, 0, 0, 0, 0, 3, 1 },
+                         { 0, 0, 3, 0, 1, 0, 0, 8, 0 },
+                         { 9, 0, 0, 8, 6, 3, 0, 0, 5 },
+                         { 0, 5, 0, 0, 9, 0, 6, 0, 0 },
+                         { 1, 3, 0, 0, 0, 0, 2, 5, 0 },
+                         { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
+                         { 0, 0, 5, 2, 0, 6, 3, 0, 0 } };
+ 
+        if (solveSuduko(grid, 0, 0))
+            print(grid);
+        else
+            System.out.println("No Solution exists");
+    }
+    // This is code is contributed by Pradeep Mondal P
+}
+
+
+
+Spiral
+
+
+// Java program to print a given matrix in spiral form
+import java.io.*;
+ 
+class GFG {
+ 
+    // Function print matrix in spiral form
+    static void spiralPrint(int m, int n, int a[][])
+    {
+        int i, k = 0, l = 0;
+ 
+        /*  k - starting row index
+        m - ending row index
+        l - starting column index
+        n - ending column index
+        i - iterator
+        */
+ 
+        while (k < m && l < n) {
+            // Print the first row from the remaining rows
+            for (i = l; i < n; ++i) {
+                System.out.print(a[k][i] + " ");
+            }
+            k++;
+ 
+            // Print the last column from the remaining
+            // columns
+            for (i = k; i < m; ++i) {
+                System.out.print(a[i][n - 1] + " ");
+            }
+            n--;
+ 
+            // Print the last row from the remaining rows */
+            if (k < m) {
+                for (i = n - 1; i >= l; --i) {
+                    System.out.print(a[m - 1][i] + " ");
+                }
+                m--;
+            }
+ 
+            // Print the first column from the remaining
+            // columns */
+            if (l < n) {
+                for (i = m - 1; i >= k; --i) {
+                    System.out.print(a[i][l] + " ");
+                }
+                l++;
+            }
+        }
+    }
+ 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        int R = 3;
+        int C = 6;
+        int a[][] = { { 1, 2, 3, 4, 5, 6 },
+                      { 7, 8, 9, 10, 11, 12 },
+                      { 13, 14, 15, 16, 17, 18 } };
+        
+        // Function Call
+          spiralPrint(R, C, a);
+    }
+}
+
+Josephs solution
+
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int Josephus(int, int);
+ 
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    cout << Josephus(n, k);
+    return 0;
+}
+ 
+int Josephus(int n, int k)
+{
+    k--;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = 1; // Makes all the 'n' people alive by assigning them value = 1
+    }
+    int cnt = 0, cut = 0,
+        num = 1; // Cut = 0 gives the sword to 1st person.
+    while (
+        cnt < (n - 1)) // Loop continues till n-1 person dies.
+    {
+        while (num <= k) // Checks next (kth) alive persons.
+        {
+            cut++;
+            cut = cut % n; // Checks and resolves overflow of Index.
+            if (arr[cut] == 1)
+            {
+                num++; // Updates the number of persons alive.
+            }
+        }
+        num = 1;      // refreshes value to 1 for next use.
+        arr[cut] = 0; // Kills the person at postion of 'cut'
+        cnt++;        // Updates the no. of killed persons.
+        cut++;
+        cut = cut % n;        // Checks and resolves overflow of Index.
+        while (arr[cut] == 0) // Checks the next alive person the sword is to be given.
+        {
+            cut++;
+            cut = cut % n; // Checks and resolves overflow of Index.
+        }
+    }
+    return cut + 1; // Output is the position of the last man alive(Index + 1);
+}
+
+
+0 1 knapsack
+
+// Here is the top-down approach of 
+// dynamic programming
+class GFG{
+     
+// A utility function that returns 
+// maximum of two integers    
+static int max(int a, int b)    
+{    
+    return (a > b) ? a : b;    
+}
+ 
+// Returns the value of maximum profit  
+static int knapSackRec(int W, int wt[],
+                       int val[], int n,
+                       int [][]dp)
+{  
+     
+    // Base condition
+    if (n == 0 || W == 0)  
+        return 0;
+         
+    if (dp[n][W] != -1)
+        return dp[n][W];  
+     
+    if (wt[n - 1] > W)  
+     
+        // Store the value of function call  
+        // stack in table before return
+        return dp[n][W] = knapSackRec(W, wt, val,
+                                      n - 1, dp);
+                                       
+    else
+     
+        // Return value of table after storing 
+        return dp[n][W] = max((val[n - 1] +
+                              knapSackRec(W - wt[n - 1], wt,
+                                          val, n - 1, dp)),
+                              knapSackRec(W, wt, val,
+                                          n - 1, dp));            
+}
+ 
+static int knapSack(int W, int wt[], int val[], int N)
+{ 
+     
+    // Declare the table dynamically
+    int dp[][] = new int[N + 1][W + 1];
+     
+    // Loop to initially filled the
+    // table with -1
+    for(int i = 0; i < N + 1; i++)  
+        for(int j = 0; j < W + 1; j++)  
+            dp[i][j] = -1;   
+     
+    return knapSackRec(W, wt, val, N, dp);    
+}
+ 
+// Driver Code
+public static void main(String [] args)
+{      
+    int val[] = { 60, 100, 120 };  
+    int wt[] = { 10, 20, 30 };  
+     
+    int W = 50; 
+    int N = val.length;        
+     
+    System.out.println(knapSack(W, wt, val, N));  
+}    
+}

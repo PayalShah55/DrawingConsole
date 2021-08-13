@@ -1,0 +1,1080 @@
+JP
+
+Sting manipulation, capitalize every first word in a sentence
+
+Leetcde question for number of island kind question
+
+Decide if a number is good
+
+Fibonacci seres (recursion) and decode num.
+
+How to combine two sorted lists.
+
+Dynamic programming questions like decode ways and paint fence.
+
+number of ways to decode number list
+
+to find the depth of Binary tree
+Given an input of parentheses, determine if the input is well-formed and valid
+----------------------
+
+Morgan Stanley
+
+What is reflective API , Multi threading concepts and questions
+Difference between equals and hashcode method?
+Multithreading and Concurrency
+Hashmap
+Blocking queue
+LinkedHashMap Implementation
+Immutable class Implementation
+Design notepad with search functionality
+
+Q- How to find whether if a permutation of a string can be a palindrome ?
+Q- Find sum of two number =K in an sorted and unsorted array?
+Q-Hashmap internal working and where can you use identityHashMap
+Q-Design a realtime dashboard where you would display top 10 players in a game.
+Q-Design an algorithm to schedule a match within N teams where each match is elimination?How would you handle if you have N%2=1(where N is odd)? On what basis you would sit out a team and play another
+Q-How would you send and receive XML as Req and Res in REST
+Q-How would you inject a prototype bean into Singleton bean
+Q-What are the alternatives to Databases ? How can you compute 1 billion records in a distributed system? How would you breakdown data and remerge the results across distributed systems.
+Q- Find the longest prefix of words in a string of array
+Q- MQ vs Rest Services - Which is best in what scenario?
+Q- In what scenario thread becomes heavy weight ?
+
+How does priority queues and TreeMap works internally?
+
+Basic questions on Java collections, multithreading, design patterns
+
+HashMap, Concurrency, SQL, Exceptions, Iterators.
+
+REST API protocol
+The difference between PUT and POST
+
+Implementation of Linked list
+
+Below questions were asked
+1- How the Spring works internally?
+2- Map works internally?
+3 What approach is followed if two same object stored in map with same value.
+4- What is singleton ? When you will use singleton?
+5- Advantages of OOps with real time example.
+
+Phone Screen:
+Check if two elements in an array equal to a sum or not?
+1 Answer
+Onsite #1:
+Fibonacci, recursively and iteratively, Tradeoff and complexities for both solution
+1 Answer
+Onsite #2:
+Return max difference between two elements in an array
+1 Answer
+Onsite #3
+Sqrt of a number within a range of tolerance
+1 Answer
+Onsite #4
+Generate all anagrams of a string
+1 Answer
+Onsite #5
+System Design question to process multiple feeds and an API to serve various queries
+Answer Question
+Onsite#6
+Return all characters from a string which appeared more than once
+1 Answer
+Onsite #7
+Remove duplicates from a sorted array with O(1) space
+
+Interview Questions
+I have an array of million integers. I want to sum it efficiently. How would you do it without using Java 8 parallel streams?
+3 Answers
+I have a collection of string that is sorted and unique. You will receive an input as string. Your job is to search that string in that group and return true or false based on its presence. How will you solve this?
+1 Answer
+I have an online radio player application. There are two types of subscription free and paid. In free there is a restriction that user can only listen upto 50 songs in 1 hour. How will you code this?
+Answer Question
+How does HashMap works? What is the time complexity of the get method in HashMap?
+
+Some basic puzzle like burning rope from two ends. and questions on past experience ( not detailed )
+
+wap to find a number in circular rotated array in less than O(n)
+1 Answer
+wap to reverse a string using recursion
+
+Interview Questions
+reverse linked list
+1 Answer
+implement queue using stacks
+Answer Question
+reverse a stack without "new" key word in java
+1 Answer
+HashMap implementation
+
+1- What is the difference between jvm, jrm , and ….?
+2- What do we do in linux if system is slow?
+3- What command in linux shows us the permissions? What is the sequence of each
+4- What permissions it will give us if we write chmod 755
+5- If we want to merge two tables, what data structure we user? Hashmap. How many? 1
+6- Write algorithms on the board
+
+Interview
+The first round was telephonic interview. I am still waiting to see if I will be invited for the second round. It it was all technical not behavioral at all..
+
+Interview Questions
+what is the difference between c++ and java?
+Answer Question
+what data structure is used in Hashmap?
+1 Answer
+what is the difference between union and union all in sql?
+Answer Question
+how do you merge two tables in sql?
+Answer Question
+what is polymorphism?
+Answer Question
+what are left join and index in sql? tell the syntax.
+
+1. Difference between concurrent map and synchronized map ? No implementation details , just the difference
+2. Volatile variables and synchornization
+3. final classes
+4. Callable and future and what they do.
+5. Write a java program for finding out the first non repeating character in string. Example you have a string abcdeabc. Here the output must be d. Prepare this question, they will definitely ask you.
+6. Read a file for a sequence of input string and print in in some order to output file.
+7. You have a list of integers using an arraylist, find first if it contains duplicates, if doesn't contain duplicates, then return false else return true. Second part was to find that the duplicate elements.
+I am sure the interviewer might not be very sharp, however when you divide an array size by 2 , he was asking to round off an integer, which would be anyway a round off figure. I didn't understand what he wanted to prove , he is dumb or he is sharp !!!
+
+What will you do if you asked Friday finish until Monday the work load of 1 month
+
+Find the Rotation Count in Rotated Sorted array
+
+Simple Java questions :
+
+- Abstract and interface
+- Cloning and its types
+- String
+- Hashmap
+- Binary tree question
+- Design Executor Service
+
+Questions about core java, multithreading, collection, GC, j2ee, spring, hibernate, JMS, webservice,SQL and so on. Broad, but not to deep since its first round.
+
+Interview Questions
+An excel sheet has different rows and columns. For example, for column A, row number is 0. For column Z, row number is 25. After column Z, it again starts like AA, AB, AC...Write program to get the column name based on a number. The method should take any number and return the column name corresponding to that.
+1 Answer
+Write a program to get an int value as argument and return it as string. For example, if I give the number 3456 as int, it should return the same number 3456 but as an object of String. You cannot use Java API methods.
+3 Answers
+You have an array of int with different numbers. You have to sort it in a way that the all the even numbers should come in the starting and odd numbers in the end. You cannot use a temp array or extra array in your solution.
+
+
+1. Write a function to reverse a string.
+2. What’s the difference between Interface and Abstract.
+3. Write a function to reverse words in a string
+ex: “how are you” becomes “you are how”.
+4. Can you assign a String to and Object? What about the other way around and why?
+5. Explain Generics.
+6. Explain Generics wildcards.
+7. Find the depth of a binary tree.
+8. How can you run one thread and then another only after the first thread has completed?
+9. What’s the difference between a thread sleep() and wait()? What about suspend(), resume()?
+10. Write a function that traverses an array and checks the sum to the left of the index with the sum to the write of the index, and returns the index position when the left summation equals the right. Can you optimize your solution further?
+11. Write an iterator that traverses an array of integers, but only for even values.
+12. Design a library containing books with users that can check out books from the library.
+This task is to meant to demonstrate your design abilities.
+
+database: describe the 1NF, 2NF and 3NF.
+
+----------------------------------------------------------------
+JP
+
+Behavioural
+
+what are your background that makes you fit for the job
+Name a time you had to overcome a challenge
+Pick one of you past projects and explain how you designed it.
+Why J P Morgan ?
+
+Describe a situation where you had to take a decision at the last moment.
+What do expect working as a team player?
+What are your career goals?
+where do you see yourself in 5 years?
+
+Tell Me About Yourself.
+How Did You Hear About This Position?
+Why Do You Want to Work at This Company?
+Why Do You Want This Job?
+Why Should We Hire You?
+What Are Your Greatest Strengths?
+
+What was a time u messed up and how u came out of it
+
+
+Technical
+
+Q1. Tell me about yourself
+Q2. Java 8 features
+Q3. Java Stream API and lamba Example with removing a employee from List starting with name 'a'
+Q4. How java handles Multithreading with example
+Q5.Spring Boot exposure
+Q5. Cloud technologies exposure
+Q6. Spring Batch - What is the use of Commit interval
+Q7. Hibernate Uses, oracle and Sql server diff
+
+What is micro services architecture? How is it different from monolothic applications? What are the advantages?
+What is Docker? What is the difference between Docker and Kuberbetes?
+How long would you take to learn a language/framework?
+
+String, Array and in-depth language related questions.
+
+Basic Java concepts in tech round, and questions about resume
+
+OOP and design questions. Leetcode easy problems 
+
+Have you ever designed a system on your own?
+
+What is the difference between JDK and JVR
+
+
+
+Times coding question in chosen language\
+
+
+How to delete a node in linked list?
+What is a prototype in Javascript?
+How do you implement a LRU cache?
+What is the difference between a microservice vs monothilic application?
+What is CORS?
+What's the difference between a cookie, session, local storage?
+How to check for balanced brackets?
+What's the difference between a fat arrow vs normal function?
+What is inheritance in Java?
+What's a pom.xml file in Java?
+If you are applying to backend/Java focused positions, make sure you study the OOP concepts (Inheritance, Polymorphism, Abstraction, Interface), Spring/Spring boot and microservices if you had prior experience.
+
+Given exchange rates find arbitrage
+
+Difference between DELETE and DROP
+
+st round:basic questions on Java mostly on thread ,hahsmap Vs concurrent map,what is failsafe,how to implement singleton.and some basic Java questions.
+
+Second round:SOLID principles,some architecture questions,how to implement e-commerce site, questions related to threads,
+
+Manager round:Asked about me,what I am looking in the job, and my interests.
+Later manager explained about what they are looking in a candidate.
+
+If one bucket was 60% full and the second bucket was 20% full, how do you get 40% in one bucket? (something like that)
+
+Dynamic programming and recursion
+- Basic object-oriented programming trivia (DS, time complexities, etc.)
+- Some linked-list and array problems
+- Most behavioral questions were about my experiences working on teams
+- Learn about the company beforehand and ask thoughtful questions at the end
+
+Decide if a number is good?
+Technical - They asked about MVC & SDLC
+
+Interview Questions
+java 8 features
+Answer Question
+stream operation
+Answer Question
+db design for an application
+Answer Question
+session vs cookies
+Answer Question
+snake ladders game design
+
+Typical Java patterns, threading, Optional, AutoClosable, functional programming, etc. That was about the only interesting part of the whole process.
+
+1)what is OOP?
+2. what all the data structure in java?
+3. what is deadlock? how to fix it?
+
+Interview Questions
+What is the difference between runtime and compile time?
+Answer Question
+What’s the difference between a list, set, graph, and map?
+
+What is the difference between a linked list and an arraylist, and when would you use one over the other
+
+Difference between encrypted, encryption, Hashing
+What is race condition
+How do you recover from deadlock
+Best way to avoid problems in Multithreading(Use when needed only)
+Synchronized block vs Lock
+Which occupies more space Linked List or ArrayList
+Concurrent collections are also important
+What to do when we get outofmemoryerror (I guess it has to do with JVM memory specification -xmx, -xms options). Also testing to see if we used JProfiler and all.
+How does HashMap works internally (Read it , may be look at class and see)
+Hashset vs Arraylist
+Java 8 features
+what is Parallel stream
+Supplier, Consumer, Predicate etc good to know
+1 Answer
+Spring Bean Life cycle, Spring Transaction, Spring scopes. How is proxy scope implemented.
+Hibernate Lazy loading, Hibernate Detached state in session, caching in hibernate, Pagination in hibernate.
+JDBC overall questions how is it created and all.
+Prepared statement vs Callable Statement
+
+They din t ask deep questions in Spring because my experience in Spring is limited.
+1 Answer
+on Whiteboard:
+- Shopping Cart (Simple to me, tested whether we can design classes). Also test to see if we can actually write java code.
+- This was tough because the interviewer was not clear what he was expecting.
+When we have two systems how would you choose one.
+1 Answer
+Linux command line questions:
+- How to see top 10 and bottom 10 of a file
+- How to delete file recursively from folder
+- How to run process in background
+1 Answer
+Behavioral:
+- Why are looking to change
+- If you several offers with same pay what will you choose
+- Disagreement with colleague, how did you deal
+- What is career goal, would you be a team lead and all
+- How do you work , do you learn by working or someone needs to feed you stuff
+- Did you do any learning apart from work. It need not be related to your work
+- Did you work off hours
+- would you like to work on same thing or different things
+
+Design a vending machine that has different items and has different units of a currency.
+
+1- Reverse string without inbuilt function
+1 Answer
+Given a string, replace alphabet to lowercase, skip special character, and if found number than replace it with 10-num.
+eg ABCD$#@123
+o/p abcs987
+Answer Question
+Given a red black tree. Every node contains left, right node. Store node info in some data structure and search the node in DS and get left right node
+Answer Question
+Sql questions - What are indexes? Given two tables. How to write join query based on some conditions.
+Answer Question
+Given two array list. Print the unique numbers.
+a1= {1,2,3,4)
+a2= {2,3,5,6}
+o/p- {1.2.3.4.5.6}
+
+Write merge sort algorithm and explain its time complexity
+
+How does stock exchange work?
+You have a three gallon bucket and a five gallon bucket, how do you get four gallons?
+Design a parking lot
+Given a string, sort its words
+What are advantages of indexing in database?
+
+The reverse and add function starts with a number, reverses its digits, and adds the reverse to the original. If the sum is not a palindrome, repeat this procedure until it does.
+
+Write a program that takes number as a string and gives the resulting palindrome (if one exists). If it took more than 1,000 iterations (additions) or yield a palindrome that is greater than 4,294,967,295, assume that no palindrome exist for the given number. The output should be the number of additions performed and the end number.
+1 Answer
+Find the minimum number of coins needed to make an amount of change given coins = 1, 3, 5
+
+Rest, ORM, Hibernate, MyBatis, Jpa, Spring framework( Spring boot and MVC), General questions.
+
+About Design Pattern
+
+Given daily prices of a stock, what is the maximum profit one can earn by buying and selling that stock?
+
+Explain the difference between object-oriented and procedural programming languages
+Answer Question
+Explain encapsulation, inheritance, polymorphism
+Answer Question
+What is garbage collection? (in Java)
+Answer Question
+(Java Collections) What is the difference between a Set and a List?
+Answer Question
+Explain Exception handling. What would happen if you don't handle exceptions?
+
+
+algorithms, puzzles, internals of concurrent collections, mark and
+
+sweep algorithm, own sorting algorithm
+
+Describe a LRU (least recently used) algorithm in O(1)
+
+Find the missing number from 1..n numbers in an array
+
+Asked questions about agile development and scrum process.
+
+--------------------------------------------------------------------------------------------------------
+
+ThoughtWorks
+
+ER diagram for e-commerce site
+implement chess by oops concepts
+Build a Minesweeper application using any language.
+Strings, Oops, Arrays , and reversing strings.
+
+2 hrs for creating a board house game (using the OOPS concept and design principles) and around 1.15 hr of discussion and pairing
+the top priority was given to the use of oops concept in the project while the least priority was given to accurate output.
+
+*1st Round* : Hackerearth online test (12 December2020)
+90 mins for 2 questions (It was more than enough)
+
+*2nd Round* : Coding and Pairing (23 December 2020)
+2 hrs for creating a board house game (using the OOPS concept and design principles) and around 1.15 hr of discussion and pairing
+the top priority was given to the use of oops concept in the project while the least priority was given to accurate output.
+
+*3rd Round* : Technical Round (conceptual and mainly focussed on designing problems)
+questions included: 1) explain full architecture of your current project on draw io.
+2) what if there is sudden increase in database size.
+3) how you would reduce the latency of apis
+4) What policy would you use in caching for filling and removing elements
+5) Implement caching with CORE JAVA
+6) Optimise Least Recently Used (LRU) implementation time complexity
+7) how to customise hashmap to return random value with equal probability
+There were some more questions but only these I remember
+
+*4th Round* : Social Change Interview
+
+This round is concerned on social topics like Equality, LGBTQ, Discrimination, Feminism, Typical Indian mentality.
+I was asked situational questions to open up my mentality towards women. also had a discussion on what problems women face in India, how to overcome those problems, farmers protest, what can be done as a resolution.
+
+Key here is to at least have an opinion and be strong on it. Now if you do have an opinion then you better be sure that it *doesn't* in anyway support patriarchy.
+And also don't lie. They will twist you until they validate your opinion.
+
+*5th Round* : Leadership Round
+
+This round was supposed to have questions around leadership but since I was having only 3 yrs of experience, I was asked about what motivates me, what I seek in people in workplace and what are the things I get annoyed with etc.
+
+HR Discussion regarding offer.
+
+All and all, It was a great experience and I found it a well designed interview process. which is more on the concept side instead of being language specific.
+
+Interview Questions
+questions are given in description
+
+
+Given a set of channels with different subscription schemes, add subscription, deduct price from customer account, update customer subscription.
+
+car services kind of question
+
+Design hand cricket game, e-commerce website, questions about my projects.
+
+ http hunt game refactoring book by Martin Fowler which I did
+ Why do we do normalization for databases?
+ 
+ Interview Questions
+DSA questions like the Level-wise sum of a tree, Implementation of a Trie, etc.
+Answer Question
+DBMS questions( Joins, Normalisation)
+Answer Question
+Discussion on my projects and internships
+Answer Question
+Questions on REST APIs
+
+We need to design Hotel Management System.
+Password validation program
+Displaying patterns , linked lists , binary tree , stacks , queue, all were related to data structures
+
+In long coding, taxi booking application was given
+
+Problem Solving Statement - Tic Tac Toe game 29 Oct 2018
+
+
+
+
+
+    
+        // parse path and write JSON output to PrintWriter 'output'.
+        boolean sCity=false,sFirstName=false,sLastName=false,
+        if(path.contains("city"))
+        {
+            sCity=true;
+        }
+		else if(path.contains("fisrtName")
+		{
+			sFirstName=true;
+		}
+		else if(path.contains("lastName")
+		{
+		sLastName=true;
+		}
+		
+        
+       DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+       DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+       doc.getDocumentElement().normalize();
+
+
+=-----------------------------------------------------------------------------------------
+
+Deutsche Bank
+
+how do you call other webservices in you api.
+Answer: Using apache httpclient.
+
+How to return pojo from rest webservice
+
+what is segregation and aggregation
+
+what is guava cache? why and how you used it?how you invalidated it?
+
+what is distributed caching?
+
+mutable class?
+
+wait ,notify detail explanation
+
+join menthod explanation
+
+annotations of rest and spring
+
+how to return pojo from rest service
+
+Question based on String tokeniser
+
+collections, multithreading, SQL queries
+
+I was asked to implement the Singleton pattern using lazy-loading, which was easy enough, but them the question continued with other implementations of the pattern specifically around multi-threading.
+
+Difference between an hash map and a set
+
+What are the 2 ways to create thread. Write code for the same.
+
+Java Keywords like finally final finalize() Access Specifiers
+
+Deadlock
+Prevention, Detection techniques
+Scheduling
+Round Robin
+Context switching
+Java- reverse string ka logic
+String buffer
+Polymorphism
+Oops concepts
+Is java an extension of object oriented programming yeh pucha
+Python slicing technique
+Pickle module
+Random number generate kaise honge python mei
+How can we del a file in python
+
+ Postfix implementation using stack
+
+ Dynamic Problem with proper implementation in any language
+
+Explain a class, object, inheritance, polymorphism and tie them together.
+
+JAVA INTERFACE, DESIGNING.
+design embedded design of chess game.
+IMPLEMENT the rules og game
+
+Techincal Interview: The interviewer asked me about the project I did. There were detailed discussion on project.Then she asked me about writing program for finding second most repeated element in a string. Then she asked about a question on system design om which she provided a situation and you need to write code for it.
+
+Techincal+HR:He asked me two coding questions. One was to find one non repeating character in a string. Second was whether binary search can be applied to linked list. Third question was on codi
+
+What is garbage collection
+
+What is hascode
+
+Then a coding question - reverse last n nodes of a linked list.
+
+couple of questions around hashmap implementation..
+private construtor impact
+static method multithreading
+type of collections
+database joins types of joins
+some UML questions
+JMS questions.
+
+what if define hash code as single constant in the object class.How would Hashmap behave in that scenario..
+
+difference between hashmap and hashtable
+
+Codes
+
+https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+
+https://www.geeksforgeeks.org/reverse-a-linked-list/
+https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/https://www.geeksforgeeks.org/delete-alternate-nodes-of-a-linked-list/
+https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
+https://www.geeksforgeeks.org/implement-stack-using-queue/
+https://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/
+https://www.geeksforgeeks.org/lru-cache-implementation/
+
+I was asked difference between merge and quick sort. Then, at last, I was asked water jug puzzle.
+
+Dynamic Programming- Matrix maze problem (Count number of ways to reach destination in a Maze)
+Find number of sets (a set can be of at least two numbers) of consecutive integers such that their sum = N (N is input).
+eg. For N=15, output=3 ==> (1+2+3+4+5), (4+5+6), (7+8)
+
+Longest Increasing Subsequence, A Standard Dynamic Programming problem.
+
+Given an array of points on the xy plane in the form of strings.
+We should make zig zag moves, from (x, y) -> (x, y+h), (x, y+h) -> (x+d, y),
+
+
+
+(x+d, y) -> (x+d, y+h)..etc. We need to find the maximum points. Sorry this problem
+
+needs visualization in xy plane. (could’nt make it clear)
+
+Given a string (Sentence) ; eg:  i/p : My name is Shady
+o/p:   M  n  i   S
+
+y   a   s  h
+
+m     a
+
+e      d
+
+y
+
+Use 2-d array and insert the characters into the array and print them.
+
+Given an array of integers and we need to print the subarray with largest sum
+Use window size of four. I’ve done it in O(n).
+
+Eg:  i/p: {3, 5, 6, 2, 9, 4, 7} o/p: {2, 9, 4, 7}
+
+Given a linked list that takes characters (alphabet or integers) as the data. We need
+to find the missing character.
+
+Eg:  Given linked list:  a->b->d->e->f->g      o/p: c
+
+1->2->3->5->6->7->8      o/p: 4
+
+ Data abstraction,
+
+Encapsulation etc. He asked me to write a code for a customer to get the details of his
+
+account like name, account balance using classes and the data must be accessed only
+
+by the customer. And then he asked me to write a code for the deletion of an element from
+
+an array ( in-place deletion rather than printing the required elements and do not use extra
+
+memory ).
+
+
+Write a code to get the number of notes from an ATM machine such that only 500
+
+rupee notes are to be processed and five 100 rupee rupee notes are to be processed.
+
+Then they asked me to differentiate between different sorting algorithms. ( The as like, if you had bubble sort algo  then what is the need of merge and quick sort )
+
+https://leetcode.com/problems/minimum-window-substring/description/
+
+He told me to give 1 or 2 examples of 8 queens placed on the chess board in N queen problem. He didn’t want the algorithm, just the example to test how I approach the solution smartly.
+
+He asked me to design the Chess game. Told me to write the classes and just the name of the method.
+2. What is BST?
+3. If the element is inserted one by one linearly then what is the time complexity of insertion in BST and to determine the height of the tree. Answer- O(n).
+4. How the above complexity can be reduced. Answer – Using height balanced BST i.e AVL Tree.
+5. LR rotation of an AVL tree.
+6. What is Red Black Tree?
+7. Can RBT have two consecutive red nodes?
+8. Difference between RBT and AVL Tree.
+9. There will be 2 full stacks and one number N. What is the maximum element to be popped so as to achieve the sum <= N. While popping, we will be adding this popped elements and when the sum becomes >=N, Output the number of the popped element
+
+e made me write binary search program. Detecting loop in the linked list, He asked me not to write the most common method which to use slow and fast pointers.
+
+The first question they asked was to find an element in a binary tree in O(1) complexity. I wasn’t able to give the answer though I gave them a lot of approaches none of them had constant time complexity. Later he told to modify the node structure and store some additional information about the node like level etc. this was the solution he told me.
+Next was the question related to my project. He asked to draw the database structure for my project and to write few queries on them.
+Another question was a puzzle.
+Search all the duplicate strings and their frequencies. You could not use hashmap nor could you traverse the document again and again.
+The last question was to insert an element in a sorted linked list in O(log n) complexity.
+
+Tips:- The level of this round was really good. I was not able to solve all questions.
+
+Linked Lists: insertion, Deletion, finding the missing node in linked list
+
+Arrays: searching, sorting
+
+20 points (getting the cumulative sum of GCDs over the indices given (eg: 0-2, 1-4, etc) on a list)
+50 points (getting the size of a squared matrix by placing numbers in it with a finite distance between them across all directions)
+50 points (I don’t remember the exact question but it was related to making a combination of numbers based on their indices)
+
+Egg Dropping puzzle (x eggs and k floors).
+Array consists of 0 and 1, sort it efficiently.
+
+Explain your internship project. Since, I had project on DBMS, he asked many questions on DBMS.
+Write SQL for 3-4 questions.
+Difference between WHERE and HAVING? Where do we use them?
+Explain insertion and deletion in array and linked list.
+Five differences between tree and graph.
+Explain Bellman Ford Algorithm and how is this different from Dijkstra?
+Traveling salesman problem, and what if he need not return back to his home?
+Which sorting algorithm is the best according to you, Merge sort or quick sort?
+Explain Heap Sort.
+Explain Memory management.
+Explain Mutex and Semaphore.
+
+Normalization – why do we need 1NF, 2NF, 3NF, Update delete and insert anomaly
+She gave an example of a table and asked it is in which form?
+SQL queries- Print details of the student with nth highest marks, and one on joins.
+Write a code- https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
+
+Then this- https://www.geeksforgeeks.org/trapping-rain-water/
+
+What does java uses compiler or interpreter?- Both -How?- Tell about JVM https://www.quora.com/Why-does-Java-use-both-compiler-as-well-as-Interpreter
+
+Which is better between merge sort and quick sort and y? https://www.geeksforgeeks.org/quicksort-better-mergesort/#:~:text=Quick%20sort%20is%20an%20in,sort%20the%20advantage%20of%20space.
+When will quick sort’s time complexity be O(nlogn)… I mean how should be arrangement of the array? https://www.geeksforgeeks.org/quick-sort/     at the bottom
+
+then he asked some standard coding questions like finding nearest perfect square without using any libraries or functions(you can only use +, -, *, /) then at the end he asked  an SQL query which i was able to write.
+
+Palindrome pair in an array of words (or strings).
+
+Explain Dijkstra’s shortest path algorithm,
+
+Delete a Node from linked list without head pointer.
+Function to check if a singly linked list is palindrome.
+
+Design an ER diagram for IRCTC. What are the attributes and primary keys in the tables? What derived attribute can be there in the design?
+c. What different normal forms do we have? Give the definitions of 1NF, 2NF & 3NF. Given a STUDENT(Roll,Name,Ph_No) schema where Ph_No is multi-valued attribute, what are the 1NF & 2NF normal forms?
+
+Implement a queue with two stacks.
+b. Construct BST from a given array(i.e. inserting elements of the array from left to right to a BST)
+c. Write pseudocodes for insertion and search of an element in a BST with illustration.
+
+Explain Array and ArrayList
+Explain the ArrayList and LinkedList. Which Interface do they actually implement
+Explain Multiple Inheritance In Java. If it is possible or not here.
+a
+Write SQL queries for displaying all unique columns.
+Can a Constructor be private, static, final, return type can be there?
+Database Normalization
+
+Remove duplicate elements in an array the quickest way.\
+
+You are given three boxes Labeled Apple, Orange, and Mixed. Each label’s name is false. That means if a box has a label apple then it can be mixed or orange but not apple. You have to find the minimum number of attempts to identify them.
+
+Qualys
+
+Questions about Linked List-Insertion, traversing through it. Questions about data structures. Removing duplicate characters from a string.
+Very basic questions like what is TCP-port or sorting algorithms
+
+Interview Questions
+Insert a node into a singly linked list.
+Answer Question
+Convert an alphanumeric string into a numeric string.
+Answer Question
+Implement a hashmap.
+Answer Question
+Print a directory structure, both recursively and iteratively.
+Answer Question
+Given an int array, remove all duplicates from the array.
+
+Q1. Subset sum in an array.
+Q2. Real time system design for a quick response time.
+
+Interview Questions
+Program : aaabb -> true (ababa)
+aaaabb -> false (ababaa - No adjacent alphabet allowed like aa)
+Answer Question
+Program : find next palindrome number. (119 -> 121, 545 -> 555)
+Answer Question
+RabbitMQ -> how will you handle if message from AMQP is readed by processing failed. So what will happen to message read from queue.
+Answer Question
+Question of designing application (classes ) - observer, factory design pattern
+
+Difference between NoSQL and SQL?
+Optimized algorithm to count the duplicate characters in a string
+CAP theorem and its implementation in cloud
+
+Design LRU cache
+Answer Question
+Design a system which will allow downloading images in an distributed network
+Answer Question
+Design a cricket score-card system which updates automatically as game progresses
+Answer Question
+
+
+--------------------------------------------------------------------------------
+
+Accenture
+
+If there are 5 pineapples on a tree and I pick 5 of them how many are left?
+
+
+1. Spring MVC structure
+2. Maven and ANT difference
+3. Collections
+
+Explain the project Architecture for the recent project you have done.
+
+Is anagram
+
+about multi-threading
+------------------------------------------------------------------------------------
+
+Publicis Sapient
+
+how to load specific bean
+if two beans are created for a class what will happen when we autowire the class
+which injection take place first constructor or setter when both are there
+for concat which class is preferred string buffer or builder
+Session management in spring
+lazy loading of bean
+
+Question was mostly on core Java. Almost all topics were covered like collection hash map working equal hash code contract, 
+basic SQL queries like Employee manager table, employee incentive table
+and student marks table, serialization , logging , threading , producer consumer, semaphore , count down latch etc.
+
+Hash map
+Equal hash code
+Linked list loop
+Min heap
+Threading concurrent package
+
+Telephonic @ One of their office.
+Small data structure programs,
+Multi-threading concepts(especially Concurrent package, Cyclic barrier, Countdown latch, Lock, Lock management and dead lock handling, thread scheduling, thread pool implementation etc),
+Database queries,
+Servlet & JSP,
+Spring.
+4. Telephonic @ One of their office.
+Similar to round 3, but will ask internal implementations of thread safe data structures( CopyOnWriteArrayList, ConcurrentHashMap, Blocking queue), TreeMap and implementations,
+Garbage collection and types,
+Serialization,
+Generics(Upperbound, Lowerbound),
+Singleton design pattern ( restricting duplicate instance creation when the class is Serializable, during reflection usages, multiple class loaders).
+Database Queries.
+Spring in detail.
+Hibernate questions of session, transaction etc.
+
+
+Normal Core Java + Spring and Multithreading question.
+Some questions on Transaction handling and Database queries and Normalization
+Performance analysis and Garbage Colection
+
+what's is binary tree
+what is intermediate and transition operations
+what improvements in java7 Hashmap and java8 Hashmap
+
+Concurrent package
+
+filter files using FileFilter in java
+
+Pgm for string reverse
+Pgm for writing abcabcabc as aaabbbccc
+Pgm for poi library implementation
+
+They are asking mostly questions which need to know internal implementation of data structures for example hashmap ,concurrenthashmap,treemap ,treeset.
+
+Implement your custom garbage collector.
+
+Overall interview questions :-
+Q. Complete core java, design patterns, JMS, Web services,
+- multi threading
+- concurrency
+- serialization
+- inner classes
+- JMM
+- Garbage collection
+- JMS
+- Rest and soap web service difference
+- discussion on the coding exercise
+- Junit cases for coding exercise
+Q. Spring and hibernate (optional)
+
+-------------------------------------------------------
+Credit Suisse
+
+4. 2-3 questions are based on Parallel.ForEach
+study this deepely.
+
+5. We have a WCF service for internet environment, which binding to use(need transport level security).
+there is one .Parallel method in configurations of wcf read it.
+
+6. List<Employee> with 1000 records. You applied Parallel.ForEach.
+how many threads it will instianciate?
+
+7. puzzle:
+there are four persons need to go over the bridge, they take 1,3,7,10 minutes respectively. How much total time required to cross the bridge to all.
+
+8. Linq Query:
+Country table(CountryId, Name) and Cities table(CountryId, name):
+Get all countries with cities less than 3, also fetch who do not have any city.
+The options are seems very similar so look very closely.
+
+
+Bonus question at last:
+- you have predicted the prices of 'xyz' stock for next 10 days:
+3,7,4,10,11,8,5,4,8,9
+you can buy one stock in a day, can sell one in a day. Only sell if you own it. Design an algorithm to get maximum profit.
+
+How would you enable downloading of a very large file to client machine using java servlet technology?
+
+What are recursive function advantage and disadvantages
+
+What is the difference between log4j and java logging api.
+
+Build Console Application
+ 
+Console drawing program. Console drawing program.
+
+Command Description
+C w h Should create a new canvas of width w and height h.
+L x1 y1 x2 y2 Should create a new line from (x1,y1) to (x2,y2). Currently only
+horizontal or vertical lines are supported. Horizontal and vertical lines
+will be drawn using the 'x' character.
+R x1 y1 x2 y2 Should create a new rectangle, whose upper left corner is (x1,y1) and
+lower right corner is (x2,y2). Horizontal and vertical lines will be drawn
+using the 'x' character.
+B x y c Should fill the entire area connected to (x,y) with "colour" c. The
+behaviour of this is the same as that of the "bucket fill" tool in paint
+programs.
+Q Should quit the program.
+
+__Sample I/O__
+
+Below is a sample run of the program. User input is prefixed with enter command:
+
+enter command: C 20 4
+----------------------
+| |
+| |
+| |
+| |
+----------------------
+
+enter command: L 1 2 6 2
+----------------------
+| |
+|xxxxxx |
+| |
+| |
+----------------------
+
+enter command: L 6 3 6 4
+----------------------
+| |
+|xxxxxx |
+| x |
+| x |
+----------------------
+
+enter command: R 14 1 18 3
+----------------------
+| xxxxx |
+|xxxxxx x x |
+| x xxxxx |
+| x |
+----------------------
+
+enter command: B 10 3 o
+----------------------
+|oooooooooooooxxxxxoo|
+|xxxxxxooooooox xoo|
+| xoooooooxxxxxoo|
+| xoooooooooooooo|
+----------------------
+
+enter command: Q
+
+Questions about programming patterns, CI/CD, process automation, containerazitation, etc.
+------------------------------------------------------
+
+MasterCard
+
+Technical round (oops concepts,multithreading,spring security,MySQL query,hibernate, 
+collection,stream api,cosumer,producer, predicate, exception handling, design patterns )
+
+I was asked to code a question on CodePair wherein I was given two sorted arrays I had to merge the and find median and mean of the same and print answer in floating points 
+with the given number of decimal digits. I was able to code it and answer most of the questions.
+
+Write code that will find a duplicate value in an array.
+
+spring and spring boot difference
+
+Multi-threading - what happens if you call run() directly?
+
+I was asked House Robber, and House Robber II
+
+I was asked to develop an algorithm to win Bananagrams
+
+How would you investigate an issue that happened on a production server but you can't replicate it locally (ie. server crash).
+
+technical challenge of LRU cache algorithm
+
+Spring, spring security , Java related questions
+
+Few code repeated to code Java were asked to write on paper
+
+What is the difference between association, composition and aggregation?
+
+How would you prevent sql injection?
+How would you find duplicates in a large csv file not fitting in memory?
+What is the difference between the sleep and wait method in java?
+GWT
+Most difficult question asked was Concurrent Modification Exception
+--------------------------------------
+
+CitiBank
+
+data structures, algorithm review, linked lists
+
+to find GCD of given numbers
+
+3 interviews in one days.
+1) technical interview:
+includes DS and algo questions
+2) managerial interview
+includes personal experience + abstract questions
+3) HR
+real life situations
+
+1) how to detect cycle.
+2) reverse list
+3) oop concepts
+
+How to check pallindrome in Linked List
+
+How do you read a line from database？
+
+1.Segregate negatives numbers from positive in an array
+2. reverse a number without using any string function
+3. Hibernate get vs load
+4. Implement Decorator and factory pattern
+
+Binary Search
+
+Tell me about executor framework.
+Difference in Future and Callable.
+Singleton and Decorator pattern.
+How two systems communicate each other?
+
+BFS implementation for tree. Java exceptions. And few on my projects
+
+DFS/BFS in a 2D matrix
+
+given a message (string type) and a magazine (string type), check if the magazine have the enough character to form the message you want to send.
+Answer Question
+Give 9 can, 8 of them have the same weight and one is slight heavily, given a balance, how many time do you need to find the heavily can?
+
+There was some strange database problem where i was asked to devise a mechanism to store and retrieve data more efficiently. I replied with something not that confidently. They moved on to next one quickly.
+
+Also I was asked about different sorting algorithms and to write them out.
+
+Spring Boot
+Messaging systems
+Java Concurrency
+
+Design a system for a service center.
+
+How to check pallindrome in Linked List
+
+print all the recurring characters in String
+
+Siemens Test
+
+So I encountered this one in an online code test.
+Company siemens
+locaton india
+Special Number is a number that can be expressed as sum of 2 distinct single digit numbers that are odd and prime with each of them consiting of positive power. For example 8 can be expressed as 3^1 + 5^1.
+for eg: if A is the special no ,then A can be expressed as M^x1 + N^x2 where M!=N and x1 and x2 are greater than 0.
+Now let's say we have a normal number B,in order to convert B to A,we can either increase it by 1 (for a cost increasingCost) or we can decrease it by 1 (for decreasing cost)
+What are the minimum no of moves required to convert B to A
+Input test case
+4 is the number to be converted
+increasing cost is 7
+decreasing cost is 8
+then answer is 4 moves needed with cost 28 because we increment 4 by 1 times to get 8 which can be expressed as 5+3
+
+
+
+
+
+
+
+
+
